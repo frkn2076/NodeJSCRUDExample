@@ -1,0 +1,47 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "simple api project",
+  "main": "app.js",
+  "scripts": {
+    "lint": "eslint",
+    "start": "nodemon app.js",
+    "test": "mocha tests/**/*Tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frkn2076/NodeJSCRUDExample.git"
+  },
+  "author": "FurkanOzturk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frkn2076/NodeJSCRUDExample/issues"
+  },
+  "homepage": "https://github.com/frkn2076/NodeJSCRUDExample#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.11.8",
+    "nodemon": "^1.18.5"
+  },
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "mocha": "^5.2.0",
+    "should": "^13.2.3",
+    "sinon": "^7.2.2",
+    "supertest": "^3.3.0"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
