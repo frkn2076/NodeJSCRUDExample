@@ -4,7 +4,7 @@
 #### * Unit testing with Mocha and Sinon
 #### * Integration testing with Supertest
 
-Guide: 
+## Guide: 
 - npm install (to install modules)
 - npm test (to run unit tests)
 - npm t (to run integration tests)
